@@ -1,0 +1,85 @@
+  {
+  "accuracy_test": 0.926829268292683,
+  "classification_report": {
+    "Survived": {
+      "precision": 0.9487179487179487,
+      "recall": 0.9024390243902439,
+      "f1-score": 0.925,
+      "support": 41.0
+    },
+    "Died": {
+      "precision": 0.9069767441860465,
+      "recall": 0.9512195121951219,
+      "f1-score": 0.9285714285714286,
+      "support": 41.0
+    },
+    "accuracy": 0.926829268292683,
+    "macro avg": {
+      "precision": 0.9278473464519976,
+      "recall": 0.9268292682926829,
+      "f1-score": 0.9267857142857143,
+      "support": 82.0
+    },
+    "weighted avg": {
+      "precision": 0.9278473464519976,
+      "recall": 0.926829268292683,
+      "f1-score": 0.9267857142857142,
+      "support": 82.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      37,
+      4
+    ],
+    [
+      2,
+      39
+    ]
+  ],
+  "fa_optimized": {
+    "optimal_C": 1.9672129802337852,
+    "optimal_gamma": 0.12218290718145072,
+    "best_cv_accuracy_during_search": 0.8677083333333332,
+    "bounds": {
+      "C": {
+        "lb": 1.0,
+        "ub": 3.0
+      },
+      "gamma": {
+        "lb": 0.1,
+        "ub": 1.0
+      }
+    },
+    "max_evals": 50,
+    "pop_size": 30
+  },
+  "cv_final_mean": 0.8610576923076924,
+  "cv_final_std": 0.0378924240293039,
+  "feature_order": [
+    "age",
+    "anaemia",
+    "creatinine_phosphokinase",
+    "diabetes",
+    "ejection_fraction",
+    "high_blood_pressure",
+    "platelets",
+    "serum_creatinine",
+    "serum_sodium",
+    "sex",
+    "smoking",
+    "time"
+  ],
+  "model_params": {
+    "C": 1.9672129802337852,
+    "kernel": "rbf",
+    "gamma": 0.12218290718145072,
+    "probability": true,
+    "random_state": 42
+  },
+  "paths": {
+    "model": "models\\heart_failure_svm.joblib",
+    "scaler": "models\\scaler.joblib",
+    "dataset_used": "data\\heart_failure.csv"
+  }
+}
